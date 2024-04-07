@@ -1,0 +1,5 @@
+- Choose debug method as serial wire or not you will have to erase STM32's FLASH to reuse.
+- We are working in 4 bit mode. So you have to read instruction about LCD1602 to understand it. Basically, we have to send 4 byte to actually send 1 byte data.
+- Change STM32 to boot mode to download code. Then reverse it to run code.
+- STM32 is master in I2C. It can send both data and command. List of command inside library. 
+- LCD works as a SLAVE of I2C. It's slave address is 0x27<<1(depends on your config). 
