@@ -1,3 +1,4 @@
+- First enable Interrupt for ADC1/2 in NVIC table. 
 - The HAL_ADC_Start_IT() function is responsible for enabling the interrupt and starting ADC conversion of regular channels. It takes in a single parameter which is the pointer to the ADC_HandleTypeDef structure that contains the configuration parameters for the specified ADC. In our case it is ‘&hadc1.’
 `
   HAL_ADC_Start_IT(&hadc1);
